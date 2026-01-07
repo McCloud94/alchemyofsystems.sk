@@ -74,6 +74,14 @@
             line-height: 1.2;
             margin-bottom: 1.5rem;
         }
+        
+        h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 2rem; /* 32px */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
 
         p, .section-p {
             font-family: 'JetBrains Mono', monospace;
@@ -235,31 +243,120 @@
                 </p>
             </div>
 
-            <!-- Kvantifikacia Hodnoty -->
-            <div id="kvant" class="max-w-3xl animate-on-scroll">
-                <h2 class="font-serif font-semibold text-5xl md:text-5xl mb-6">
-                    <span class="text-brandRed">Kvantifikácia</span> <span class="text-ink">Hodnoty.</span>
-                </h2>
-                <p>Väčšina agentúr sa vám snaží predať „viac". Viac leadov, viac návštevnosti, viac.. My veríme v menej. Rast nemeriame dojmami. Meriame ho fyzikou biznisu.</p>
-                
-                <!-- Math Block -->
-                <div class="my-10 p-8 bg-stone/40 border border-stone/70 rounded-sm font-mono animate-on-scroll" data-delay="100">
-                    <div class="text-xs text-rust/50 mb-4 uppercase tracking-widest">// ALCHEMY_FORMULA</div>
-                    <div class="text-xl md:text-1xl text-ink">
-                        HODNOTA = VÝSLEDOK ÷ <br class="md:hidden"> (ČAS + NÁKLADY + ÚSILIE)
-                    </div>
-                </div>
+        <!-- Kvantifikacia Hodnoty -->
+<div id="kvant" class="max-w-3xl animate-on-scroll">
+    <h2 class="font-serif font-semibold text-5xl md:text-5xl mb-6">
+        <span class="text-brandRed">Kvantifikácia</span> <span class="text-ink">Hodnoty.</span>
+    </h2>
+    <p class="mt-10 animate-on-scroll" data-delay="200">
+        Rast nie je len to, čo pribudne. Je to aj to, čo <span class="font-bold text-brandRed">prestane unikať</span>.
+        Čas. Kapitál. Pozornosť. Tieto veličiny majú cenu — či ich meriate, alebo nie.
+    </p>
+    <p class="mt-10 animate-on-scroll" data-delay="200">
+        Nie vždy ide o viac. Ide o <span class="font-bold text-ink">presnejšie</span>.<br> 
+        Maximálny výsledok s <span class="text-brandRed">minimálnym trením</span>.<br>
+        Keď rovnaký výnos stojí menej času, menej peňazí a menej energie, nevyrástli ste. <span class="font-bold">Zefektívneli ste</span>.<br>
+        A práve vtedy sa rast stáva možným.
+    </p>
+    
+    <!-- Math Block -->
+    <div class="my-10 p-8 bg-stone/40 border border-stone/70 rounded-sm font-mono animate-on-scroll" data-delay="100">
+        <div class="text-xs text-rust/50 mb-4 uppercase tracking-widest">// ALCHEMY_FORMULA</div>
+        <div class="text-xl md:text-1xl text-ink">
+            HODNOTA = VÝSLEDOK ÷ <br class="md:hidden"> (ČAS + NÁKLADY + ÚSILIE)
+        </div>
+    </div>
 
-                <p class="animate-on-scroll" data-delay="200">Nesnažíme sa zlepšiť len Výsledok (Výnosy). Útočíme na menovateľa.</p>
-                <ul class="space-y-4 border-l-2 border-rust/40 pl-8 animate-on-scroll" data-delay="300">
-                    <li class="mt-8"><span class="text-ink font-bold font-mono text-m ">Čas:</span> <span class="font-mono text-m">Premena hodín a dní operatívy na minúty.</span></li>
-                    <li><span class="text-ink font-bold font-mono text-m">Náklady:</span> <span class="font-mono text-m">Zníženie nákladov na akvizíciu, podporu a prevádzku.</span></li>
-                    <li><span class="text-ink font-bold font-mono text-m">Úsilie:</span> <span class="font-mono text-m">Eliminácia manuálnej operatívy, ktorú má robiť technológia, nie ľudia.</span></li>
-                </ul>
-                <p class="mt-10 animate-on-scroll" data-delay="400">
-                    Keď sa menovateľ blíži k nule, hodnota rastie exponenciálne. Toto je moderná alchýmia.
-                </p>
+    <p class="animate-on-scroll" data-delay="200">Nesnažíme sa zlepšiť len Výsledok (Výnosy). <span class="font-bold text-brandRed">Útočíme na menovateľa</span>.</p>
+    <ul class="space-y-4 border-l-2 border-rust/40 pl-8 animate-on-scroll" data-delay="300">
+        <li class="mt-8"><span class="text-ink font-bold font-mono text-m">Čas:</span> <span class="font-mono text-m">Premena hodín a dní operatívy na minúty.</span></li>
+        <li><span class="text-ink font-bold font-mono text-m">Náklady:</span> <span class="font-mono text-m">Zníženie nákladov na akvizíciu, podporu a prevádzku.</span></li>
+        <li><span class="text-ink font-bold font-mono text-m">Úsilie:</span> <span class="font-mono text-m">Eliminácia manuálnej operatívy, ktorú má robiť technológia, nie ľudia.</span></li>
+    </ul>
+    
+    <!-- Comparison Card with Icons -->
+         <p class="mt-28 text-center animate-on-scroll" data-delay="500">
+        <span class="font-bold text-lg">Dva obchody robia 50 000 € mesačne.</span>
+    </p>
+    <div class="!mt-8 grid md:grid-cols-2 gap-4 animate-on-scroll" data-delay="400">
+        <div class="p-6 bg-neutral-100 border border-neutral-200 rounded-sm">
+            <div class="flex items-center gap-3 mb-3">
+                <i data-lucide="trending-down" class="w-5 h-5 text-neutral-500"></i>
+                <span class="font-mono text-xs uppercase tracking-widest font-bold">Na strope</span>
             </div>
+            <p class="text-sm leading-relaxed text-neutral-700">
+                Prvý je preťažený, poddimenzovaný, závislý na ľuďoch.<br>
+            </p>
+        </div>
+        <div class="p-6 bg-brandRed/5 border border-brandRed/20 rounded-sm">
+            <div class="flex items-center gap-3 mb-3">
+                <i data-lucide="trending-up" class="w-5 h-5 text-brandRed"></i>
+                <span class="font-mono text-xs uppercase tracking-widest font-bold text-brandRed">Na začiatku</span>
+            </div>
+            <p class="text-sm leading-relaxed text-ink">
+                Druhý beží hladko, s rezervou, bez úzkych hrdiel.
+            </p>
+        </div>
+    </div>
+    
+    <p class="mt-6 text-center animate-on-scroll" data-delay="500">
+        <span class="text-neutral-600">Rozdiel nie je v ambícii.</span><br>
+        <span class="font-bold text-brandRed">Rozdiel je v architektúre systémov.</span>
+    </p>
+
+    <!-- NEW SECTION: Enterprise for SME -->
+    <div class="!mt-28 animate-on-scroll" data-delay="100">
+        <h3 class="font-serif font-semibold text-3xl md:text-4xl mb-5 text-ink">
+            Prečo giganti ako <span class="text-brandRed">GymBeam</span> alebo <span class="text-brandRed">Alza</span> dominujú?
+        </h3>
+        
+        <p class="mb-6 text-center animate-on-scroll" data-delay="200">Pretože spracujú 10 000 objednávok s rovnakým prevádzkovým úsilím<br> ako iní 100.</p>
+
+        <!-- Human vs AI Comparison -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8 mt-8">
+            <div class="p-8 bg-neutral-50 border border-neutral-200 rounded-sm animate-on-scroll" data-delay="500">
+                <div class="flex items-center gap-3 mb-4">
+                    <i data-lucide="user" class="w-6 h-6 text-neutral-400"></i>
+                    <span class="font-mono text-sm uppercase tracking-widest text-neutral-500">Človek</span>
+                </div>
+                <div class="text-3xl font-serif font-bold text-ink mb-2">50</div>
+                <p class="text-sm text-neutral-600">tiketov denne</p>
+            </div>
+            <div class="p-8 bg-brandRed/5 border border-brandRed/20 rounded-sm animate-on-scroll" data-delay="600">
+                <div class="flex items-center gap-3 mb-4">
+                    <i data-lucide="cpu" class="w-6 h-6 text-brandRed"></i>
+                    <span class="font-mono text-sm uppercase tracking-widest text-brandRed">AI Agent</span>
+                </div>
+                <div class="text-3xl font-serif font-bold text-brandRed mb-2">5 000</div>
+                <p class="text-sm text-ink font-medium">konverzácií súčasne</p>
+            </div>
+        </div>
+
+       <!-- Final Statement -->
+<div class="p-8 rounded-sm text-center animate-on-scroll" data-delay="700">
+    <p class="text-2xl font-serif leading-relaxed mb-4 text-ink">
+        Prinášame <span class="text-brandRed font-bold">enterprise architektúru</span> malým a stredným e-shopom.
+    </p>
+    <div class="flex flex-wrap justify-center gap-6 text-sm font-mono text-ink">
+        <span class="flex items-center gap-2">
+            <i data-lucide="check" class="w-4 h-4 text-brandRed"></i>
+            Bez korporátneho chaosu
+        </span>
+        <span class="flex items-center gap-2">
+            <i data-lucide="check" class="w-4 h-4 text-brandRed"></i>
+            Bez straty kontroly
+        </span>
+        <span class="flex items-center gap-2">
+            <i data-lucide="check" class="w-4 h-4 text-brandRed"></i>
+            S presnosťou, ktorá škáluje
+        </span>
+    </div>
+</div>
+    </div>
+</div>
+            
+            
+            
 
             <!-- Transmutacia Reality - RESTRUCTURED -->
             <div class="max-w-3xl animate-on-scroll">
@@ -366,7 +463,7 @@
                     <p class="text-ink max-w-3xl">Rozdiel medzi tým, či Peter nakúpi alebo odíde, nie je o šťastí. Nie je to o tvrdšej práci. Sú to systémy navrhnuté do posledného detailu, ktoré ticho rozhodujú za neho.</p>
                     <p class="mb-20">Tento výsledok nenájdete v krabici na regáli. Ale cestu k nemu vieme presne naplánovať. <strong>Váš plán začína dnes.</strong></p>
                     
-                    <div class="bg-ink text-paper p-8 md:p-14 rounded-sm space-y-12 animate-on-scroll" data-delay="100">
+                    <div class="bg-ink text-paper p-8 md:p-14 rounded-sm space-y-12 animate-on-scroll mx-auto" data-delay="100">
                         <div class="space-y-4">
                             <h3 class="font-serif text-3xl md:text-4xl text-white">Je váš obchod pripravený na Alchýmiu?</h3>
                             <p class="text-stone/80 font-mono text-sm leading-relaxed">Neveríme na predajné „pitche". Veríme v objektívnu diagnostiku založenú na dátach. Pekným slovám na webe veriť nemusíte, číslam áno.<br>Momentálne otvárame náš kalendár pre <span class="text-white">Systémový Audit.</span></p>
@@ -398,30 +495,29 @@
                         </div>
 
                         <div class="pt-10 border-t border-white/10 space-y-8">
-                            <p class="text-stone/80 font-serif text-xl">
-                                Spoluprácu nenavrhneme, ak neidentifikujeme potenciál na úsporu alebo rast aspoň 5 000 € – 10 000 € mesačne.
-                            </p>
+    <p class="text-stone/80 font-serif text-xl">
+        Spoluprácu nenavrhneme, ak neidentifikujeme potenciál na úsporu alebo rast aspoň 5 000 € – 10 000 € mesačne.
+    </p>
 
-                            <div class="space-y-4">
-                                <div class="space-y-4">
-                                    <a href="https://cal.com/alchemyofsystems/audit" target="_blank" class="group flex items-center gap-4 bg-brandRed text-paper px-8 py-5 rounded-sm hover:bg-white hover:text-ink transition-all duration-500 w-full justify-center shadow-2xl">
-                                        <span class="font-mono text-[14px] tracking-widest uppercase font-bold">Rezervovať Audit</span>
-                                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                                    </a>
-                                </div>
-                                <div class="text-center">
-                                    <span class="text-brandRed font-bold text-lg">50 €</span>
-                                    <p class="text-[11px] text-stone/60 uppercase tracking-[0.2em] mt-2">Symbolická investícia za strategickú jasnosť, <br> ktorá vám môže ušetriť alebo zarobiť tisíce.</p>
-                                </div>
-                            </div>
+    <div class="space-y-4">
+    <a href="https://cal.com/alchemyofsystems/audit" target="_blank" class="group flex items-center gap-4 bg-brandRed text-paper px-8 py-5 rounded-sm hover:bg-white hover:text-ink transition-all duration-500 w-full justify-center shadow-2xl">
+        <span class="font-mono text-[14px] tracking-widest uppercase font-bold">Rezervovať Audit</span>
+        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+    </a>
+    
+    <div class="text-center w-full">
+        <div class="text-brandRed font-bold text-lg">50 €</div>
+        <p class="text-[11px] text-stone/60 uppercase tracking-[0.2em] mt-2 mx-auto">Symbolická investícia za strategickú jasnosť, <br> ktorá vám môže ušetriť alebo zarobiť tisíce.</p>
+    </div>
+</div>
 
-                            <div class="text-center space-y-2">
-                                <h4 class="text-white font-serif text-lg">Presnosť vyžaduje čas.</h4>
-                                <p class="text-stone/60 text-[10px] uppercase tracking-widest leading-relaxed">
-                                    Keďže tento audit vyžaduje plné sústredenie a námahu, sme limitovaní na 5 diagnostík týždenne.Termíny sú otvorené vždy len na nasledujúcich 14 dní.
-                                </p>
-                            </div>
-                        </div>
+<div class="text-center space-y-2 w-full">
+    <h4 class="text-white font-serif text-lg">Presnosť vyžaduje čas.</h4>
+    <p class="text-stone/60 text-[10px] uppercase tracking-widest leading-relaxed mx-auto">
+        Keďže tento audit vyžaduje plné sústredenie a námahu,<br> sme limitovaní na 5 diagnostík týždenne. Termíny sú otvorené vždy len na nasledujúcich 14 dní.
+    </p>
+</div>
+</div>
                     </div>
                 </div>
             </div>
@@ -434,7 +530,7 @@
                         <!-- Question 1 -->
                         <div class="interactive-block group border-b border-neutral-200 pb-6 animate-on-scroll" data-delay="100">
                             <div class="flex justify-between items-center cursor-pointer gap-4">
-                                <div class="font-mono text-sm font-bold text-ink">Prečo nie zadarmo?</div>
+                                <div class="font-mono text-sm font-bold text-ink">Prečo je audit spoplatnený?</div>
                                 <i data-lucide="plus" class="w-4 h-4 text-brandRed transition-transform group-hover:rotate-45 flex-shrink-0"></i>
                             </div>
                             <div class="expandable-content">
